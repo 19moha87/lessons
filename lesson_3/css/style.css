@@ -1,0 +1,86 @@
+@import url("reset.css");
+
+
+/* По типам селекторів */
+
+footer{
+   color: black; 
+}
+
+h1
+{
+   color: red;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6{
+   color: blueviolet;
+}
+
+a{
+   color: green;
+}
+
+.yellow{
+   color: yellow;
+}
+.blue{
+   color: blueviolet;
+}
+
+
+#main-information,
+#history,
+#band,
+#disk{
+   color: blue;
+}
+
+
+/* Поєднання селекторів */
+
+div.some{
+   color: brown;
+}
+.text.block{
+   color: green;
+}
+
+.par,
+.par2,
+.par3{
+   color: green;
+}
+/* Вкладеність */
+
+ul a{
+   color: brown;
+}
+ol a{
+   color: blueviolet;
+}
+.information p{
+   color: green;
+}
+
+.history > p{
+   color: red;
+}
+
+.hunt>p{
+   color: brown;
+}
+.hunt ~ p{
+   color: gray;
+}
+
+.hunt + p{
+   color:blueviolet;
+}
+
+[class*="_story"]{
+   color: aqua;
+}
