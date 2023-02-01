@@ -1,0 +1,120 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,700&display=swap");
+
+@font-face {
+   font-family: 'CircularStd';
+   src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+       url('../fonts/CircularStd-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'CircularStd';
+   src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+       url('../fonts/CircularStd-Book.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+
+
+body{
+font-family: "Oswald", "Arial", sans-serif;
+font-size: 18px ;
+font-style: normal ;
+font-weight: 500 ;
+color: rgb(0, 0, 0);
+text-align: left;
+text-decoration:none;
+text-shadow: none;
+text-transform: none;
+line-height: 1.5 ;
+text-indent: 15px;
+letter-spacing: 0.5px;
+white-space: normal;
+word-spacing: 3px;
+}
+h1{
+font-family: "Dancing Script", "Arial",sans-serif;
+font-size: 50px ;
+font-style: oblique ;
+font-weight: 700 ;
+color: rgb(255, 0, 0);
+text-align: center;
+text-decoration:none;
+text-shadow:7px 7px 7px;
+text-transform:none;
+line-height: 1.5 ;
+letter-spacing: 0.5px;
+white-space: normal;
+word-spacing: 10px;
+}
+h2{
+font-family: "Space Grotesk", "Arial",sans-serif;
+font-size: 30px ;
+font-style: normal ;
+font-weight: 700 ;
+color: rgba(44, 194, 44, 0.911);
+text-align: center;
+text-decoration:underline;
+text-shadow:5px 5px 5px;
+text-transform:none;
+line-height: 1.5 ;
+letter-spacing: 0.5px;
+white-space: normal;
+word-spacing: 5px
+}
+
+h3{
+  font-family: "Space Grotesk", "Arial", sans-serif;
+font-size: 24px ;
+font-style: normal ;
+font-weight: 700 ;
+color: rgb(0, 0, 0);
+text-align: left;
+text-decoration:none;
+text-shadow: none;
+text-transform: uppercase;
+line-height: 5 ;
+text-indent: 20px;
+letter-spacing: 0.5px;
+white-space: normal;
+word-spacing: 3px; 
+}
+
+li{
+   font-family: "CircularStd", "Arial", sans-serif;
+   font-size: 20px ;
+   font-style: normal ;
+   font-weight: 700 ;
+   color: rgba(0, 0, 255, 0.911);
+   text-align: center;
+   text-decoration:none;
+   text-shadow: none;
+   text-transform: none;
+   line-height: 1.5 ;
+   letter-spacing: 0.5px;
+   white-space: normal;
+   word-spacing: 2px; 
+}
+
+footer{
+font-family: "CircularStd", "Arial", sans-serif;
+font-size: 20px ;
+font-style: normal ;
+font-weight: 700 ;
+color: rgba(0, 128, 0, 0.932);
+text-align: center;
+text-decoration:underline;
+text-shadow: none;
+text-transform: none;
+line-height: 5 ;
+letter-spacing: 0.5px;
+white-space: normal;
+word-spacing: 3px;
+}
