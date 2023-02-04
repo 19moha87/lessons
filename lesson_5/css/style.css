@@ -1,0 +1,118 @@
+@import url("/css/reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+
+body{
+   margin: 0 auto;
+}
+
+h2{
+   font-family: "Poppins", "Arial", sans-serif;
+   font-size: 25px ;
+font-style: normal ;
+font-weight: 700 ;
+text-align: left;
+line-height: 40px ;
+
+}
+
+.text{
+   font-family: "Poppins", "Arial", sans-serif;
+   font-size: 14px ;
+font-style: normal ;
+font-weight: 300 ;
+text-align: left;
+line-height: 25px ;
+
+width: 816px;
+margin-left: 312px;
+margin-bottom: 80px;
+}
+
+.title1{
+   width: 400px;
+   margin-left: 312px;
+   margin-bottom: 16px;
+}
+
+.title2{
+   width: 605px;
+   margin-left: 312px;
+   margin-bottom: 40px;
+}
+
+img.dezert{
+   margin-left:  100px;
+   margin-bottom: 80px;
+}
+img.lake{
+   margin-left: 100px;
+   margin-right: 30px;
+   margin-bottom: 80px;
+}
+/* Я не знав як по-іншому задати відступи між параграфами. Ну так як у макеті я не побачив padding-bottom після останніх параграфів, то скористався варіантом нижче. */
+
+p{
+   margin-bottom: 40px;
+  }
+
+  /* Відпрацювання css-властивостей блоків */
+
+  .block,
+  .inline,
+  .inline-block
+  {
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 20px;
+  }
+
+  .title3{
+   margin-bottom: 30px;
+  }
+  .block{
+   background-color: blue;
+   padding-top: 30px;
+   padding-right: 50px;
+   padding-bottom: 40px;
+   padding-left: 20px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   width: 1000px;
+  }
+
+  .inline{
+   display: block;
+   background-color: green;
+   width: 750px;
+   padding: 30px;
+   margin: 0 0 0 auto;
+   margin-bottom: 50px;
+   height: 500px;
+   overflow: auto;
+  }
+
+
+  .inline-block{
+   background-color: red;
+padding: 30px;
+margin: 50px;
+width: 750px;
+height: 500px;
+  }
+
+.title4{
+   max-width: 300px;
+   margin: 0 auto;
+}
+
+.list{
+   font-size: 0;
+}
+.list-item{
+   display: inline-block;
+   font-size:50px;
+   width: 300px;
+   padding: 20px 40px;
+   
+}
