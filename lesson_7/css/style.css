@@ -191,7 +191,9 @@ padding: 10px;
 }
 
 .speaker{
+max-width: 100%;
 margin-top: 80px;
+
 }
 
 /*Відпрацювання властивостей*/
