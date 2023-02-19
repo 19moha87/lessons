@@ -1,0 +1,625 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+
+/*Перше завдання по макету*/
+header{
+margin-bottom: 50px;
+}
+
+.header{
+background: url("../img/back.img") no-repeat;
+background-size: cover;
+padding-top:330px;
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-size: 12px;
+line-height: 1.6;
+color: #E5E5E5;
+padding-bottom: 100px;
+}
+
+[class*="__headcontainer"]{
+max-width: 1260px;
+margin: 0 auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.main__headcontainer >*:not(:last-child){
+margin-bottom: 15px;
+}
+
+
+.header1{
+max-width: 499px;
+}
+
+.header2{
+font-weight: 700;
+font-size: 24px;
+line-height: 1.6;
+color: #F8F9FA;
+max-width: 605px;
+}
+
+.main__headcontainer >*:hover{
+text-decoration: underline;
+}
+
+
+/* Завдання друге з макету.*/
+.secondtask{
+font-family: "Inter", sans-serif;
+font-weight: 700;
+line-height: 0.9;
+color:#637381;
+max-width: 1120px;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+
+.list1,
+.list2,
+.list3{
+display: inline-block;
+max-width: 309px;
+vertical-align: top;
+}
+
+.secondtask >*:not(:last-child){
+margin-right: 91px;
+}
+
+.list1 >*:not(:last-child){
+margin-bottom: 60px;
+}
+
+.list2 >*:not(:last-child){
+margin-bottom: 60px;
+}
+
+.list3 >*:not(:last-child){
+margin-bottom: 60px;
+}
+
+.secondtask ul{
+display: inline-block;
+}
+
+.secondtask li{
+margin-bottom: 18px;
+}
+
+
+.title-second{
+font-weight: 400;
+font-size: 26px;
+line-height: 1.07;
+margin-bottom:45px;
+max-width: 1120px;
+
+}
+
+.list-1 li::before{
+content: "";
+display: inline-block;
+background: url("../img/1.img") no-repeat;
+width: 10px;
+height: 10px;
+padding-left: 20px;
+vertical-align: middle;
+}
+
+.list-2 li::before{
+content: "";
+display: inline-block;
+background: url(../img/2.img) no-repeat;
+width: 15px;
+height: 20px;
+padding-left: 30px;
+vertical-align: middle;
+}
+
+.list-3 li::before{
+content: "";
+display: inline-block;
+background: url(../img/3.img) no-repeat;
+width: 15px;
+height: 20px;
+padding-left: 30px;
+vertical-align: middle;
+}
+
+.list-4 li::before{
+content: "";
+display: inline-block;
+background: url(../img/4.img) no-repeat;
+width: 15px;
+height: 20px;
+padding-left: 30px;
+vertical-align: middle;
+}
+
+.list-5 li::before{
+content: "";
+display: inline-block;
+background: url(../img/5.img) no-repeat;
+width: 15px;
+height: 20px;
+padding-left: 30px;
+vertical-align: middle;
+}
+
+.list-6 li::before{
+content: "";
+display: inline-block;
+background: url(../img/6.img) no-repeat;
+width: 15px;
+height: 20px;
+padding-left: 30px;
+vertical-align: middle;
+}
+
+/* Третє завдання по макету */
+
+.thirdtask{
+font-family: "Inter", sans-serif;
+min-height: 565px;
+background:  linear-gradient(116deg, rgba(244,247,255,0) 0%, rgba(244,247,255,1) 63%, rgba(48,86,211,0.0844712885154062) 63%, rgba(48,86,211,0.07886904761904767) 100%),
+linear-gradient(116deg, rgba(244,247,255,0) 69%, rgba(48,86,211,0.0844712885154062) 69%, rgba(48,86,211,0) 100%),
+#F4F7FF;
+background-size: 100%;
+margin-bottom: 50px;
+}
+
+.general{
+max-width: 1194px;
+margin: 0 auto;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+[class*="__container"]{
+display: inline-block;
+max-width: 570px;
+margin-top: 145px;
+margin-right: 180px;
+}
+
+.title-3-1{
+font-weight: 600;
+font-size: 18px;
+line-height: 1.3;
+color:#3056D3;
+margin-bottom: 13px;
+text-transform: capitalize;
+}
+
+.title-3-2{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.25;
+color: #212B36;
+margin-bottom: 15px;
+text-transform: capitalize;
+}
+
+.text-3{
+font-weight: 500;
+line-height: 1.5;
+color: #637381;
+margin-bottom: 35px;
+}
+
+.buttom{
+display: block;
+font-weight: 600;
+line-height: 1.5;
+color:#FFFFFF;
+max-width: 139px;
+min-height: 44px;
+background:#3056D3;
+border-radius: 30px;
+text-align: center;
+padding: 10px;
+margin-bottom: 15px;
+}
+
+.speaker{
+max-width: 100%;
+margin-top: 80px;
+}
+
+.title-3-1:hover{
+font-weight: 700;
+font-size: 20px;
+}
+
+.main__container >*:last-child{
+margin-bottom: 0;
+}
+
+.main__container >*:hover:not(:last-child){
+text-decoration: underline;
+}
+
+.buttom:hover{
+font-size: 18px;
+font-weight: 700;
+outline: 5px solid black;
+}
+
+.buttom:active{
+background-color: red;
+}
+
+/*Відпрацювання псевдокласів і псевдоелементів*/
+footer{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 24px;
+}
+
+.footer-main-title{
+font-size: 36px;
+}
+
+.footer-title,
+.footer-title-uppercase{
+font-size: 30px;
+}
+
+.footer-main-title,
+.footer-title-uppercase{
+text-align: center;
+font-weight: 700;
+max-width: 1000px;
+margin: 0 auto;
+margin-bottom: 30px;
+}
+
+.footer-title-uppercase{
+text-transform: uppercase;
+}
+.footer-title{
+font-weight: 700;
+margin-left: 50px;
+margin-bottom: 30px;
+}
+/*:hover*/
+
+.simple-hover{
+display: block;
+max-width: 250px;
+margin-left: 50px;
+margin-bottom: 50px;
+padding: 30px;
+text-align: center;
+background-color: rgba(45, 209, 45, 0.596);
+border: 3px solid rgba(0, 0, 0, 0.603);
+}
+
+.simple-hover:hover{
+background-color: rgb(6, 129, 6);
+border: 3px solid rgb(0, 0, 0);
+font-weight: 700;
+}
+
+/*вплив на інший об'єкт*/
+
+.link-and-div{
+margin-bottom: 50px;
+margin-left: 50px;
+}
+
+.link-div{
+display: inline-block;
+background-color: violet;
+padding: 20px;
+border: 5px double black;
+margin-bottom: 10px;
+}
+
+.link-div:hover{
+font-weight: 700;
+text-decoration: underline;
+border:5px solid black;
+}
+
+.linkdiv{
+border: 3px solid black;
+border-radius: 10px;
+max-width: 400px;
+background-color: aqua;
+padding: 10px;
+visibility: hidden;
+}
+
+.link-div:hover + .linkdiv{
+visibility: visible;
+}
+
+/*Прихований текст*/
+.hover-hidden{
+max-width: 400px;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.text-hover-hidden{
+max-width: 400px;
+padding: 30px;
+background-color: yellow;
+border: 3px solid black;
+border-radius: 10px;
+visibility: hidden;
+}
+
+.hover-hidden:hover .text-hover-hidden{
+visibility: visible;
+}
+
+/*:active*/
+.link-active{
+display: block;
+max-width: 250px;
+margin-left: 50px;
+margin-bottom: 50px;
+padding: 30px;
+text-align: center;
+background-color: rgb(45, 209, 45);
+border: 3px solid rgb(0, 0, 0);
+}
+
+.link-active:hover{
+   border: 5px solid rgb(0, 0, 0);
+text-decoration: underline;
+}
+
+.link-active:active{
+background-color: rgb(56, 45, 209);
+text-decoration: underline;
+}
+
+/*visited*/
+
+.visited{
+font-size: 24px;
+font-weight: 500;
+line-height:1.5;
+margin-left: 50px;
+margin-bottom: 50px;
+color: green;
+}
+.link-visited:hover{
+text-decoration: underline;
+}
+
+.link-visited:visited{
+color: red;
+}
+
+/*focus*/
+
+.linkfocus{
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.link-f{
+display:inline-block;
+color: green;
+}
+
+.link-f:hover{
+text-decoration: underline;
+}
+
+.link-f:focus{
+outline: 3px solid red;
+}
+
+/*target*/
+
+.main-target{
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.link-target{
+display: block;
+max-width: 250px;
+border: 3px solid black;
+text-align: center;
+padding: 10px;
+background-color: greenyellow;
+}
+
+.link-target:hover{
+text-decoration: underline;
+background-color: green;
+}
+
+.link-target:active{
+background-color: blue;
+}
+
+.text-target{
+background-color: aqua;
+border: 3px solid black;
+border-radius: 5px;
+padding: 10px;
+display: none;
+}
+
+.text-target:target{
+   display:block;
+}
+
+/*:first-child, :last-child, :nth-child()*/
+
+.first{
+background-color: violet;
+padding: 10px;
+border: 3px solid black;
+margin: 50px;
+}
+
+.first p{
+margin-bottom: 15px;
+}
+
+.first p:first-child{
+background-color: aqua;
+}
+.first p:last-child{
+background-color: #F4F7FF;
+margin-bottom: 0;
+}
+
+.first p:nth-child(3){
+background-color: white;
+color: red;
+}
+
+/*:first-of-type, :last-of-type*/
+
+
+.second{
+background-color: violet;
+padding: 10px;
+border: 3px solid black;
+margin: 50px;
+}
+
+.second p{
+margin-bottom: 15px;
+}
+
+.second p:first-of-type{
+background-color: aqua;
+}
+
+.second p:last-of-type{
+background-color: #F4F7FF;
+}
+.second p:last-child{
+margin-bottom: 0;
+}
+
+/*:nth-child(odd) and :nth-child(even), :not()*/
+
+.third{
+background-color: violet;
+padding: 10px;
+border: 3px solid black;
+margin: 50px;
+}
+
+.third p:not(:last-child){
+margin-bottom: 15px;
+}
+
+.third p:nth-child(odd){
+background-color: green;
+}
+
+.fourth{
+background-color: violet;
+padding: 10px;
+border: 3px solid black;
+margin: 50px;
+}
+
+.fourth p:not(:last-child){
+margin-bottom: 15px;
+}
+
+.fourth p:nth-child(even){
+background-color: red;
+}
+
+/*Приклад з перестановкою елементів*/
+.example{
+max-width: 600px;
+background-color: yellow;
+border: 3px solid black;
+border-radius:5px ;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.example >*{
+margin-bottom: 20px;
+}
+.title-example{
+max-width: 150px;
+background-color: violet;
+border: 3px solid black;
+border-radius:5px;
+padding: 15px;
+margin: 20px;
+}
+
+.text-example{
+padding: 20px;
+margin-bottom: 25px;
+}
+
+.link-example{
+display: block;
+color: green;
+font-weight: 700;
+margin: 20px;
+padding-bottom:10px;
+}
+
+.link-example:hover{
+text-decoration: underline;
+}
+
+.example >*:last-child{
+margin-bottom: 0;
+}
+
+/*Псевдоелементи ::before i ::after*/
+
+.psevdo{
+display: inline-block;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.psevdo li:not(:last-child){
+margin-bottom: 15px;
+}
+
+.psevdo li::before{
+content: "";
+display:inline-block;
+background: url("../img/4.img") no-repeat;
+width: 30px;
+height: 16px;
+}
+
+
+.psevdo li::after{
+content: "";
+display:inline-block;
+background: url("../img/6.img") no-repeat;
+width: 22px;
+height: 25px;
+margin-left: 5px;
+vertical-align: middle;
+visibility: hidden;
+}
+
+.psevdo li:hover::after{
+visibility: visible;
+}
+
+
+.psevdo li:hover{
+color: green;
+text-decoration: underline;
+}
