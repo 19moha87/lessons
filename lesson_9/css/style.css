@@ -1,0 +1,260 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:300,500,700&display=swap");
+
+body{
+font-family: "Inter", "Arial" sans-serif;
+}
+
+[class*="__container"]{
+max-width: 1200px;
+margin: 0 auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+img{
+max-width: 100%;
+}
+
+.main-title{
+font-size: 36px;
+font-weight:700;
+text-align: center;
+margin-bottom: 50px;
+text-transform: uppercase;
+}
+
+.title{
+font-size: 24px;
+font-weight:500;
+margin-bottom: 30px;
+}
+
+.text{
+font-size: 18px;
+font-weight:300;
+line-height: 1.2;
+margin-bottom: 30px;
+}
+
+.first-block{
+margin-bottom: 30px;
+}
+
+.trio{
+font-size: 0;
+margin-bottom: 30px;
+}
+
+.trio1,
+.trio2{
+display: inline-block;
+max-width: 270px;
+}
+
+.trio1{
+margin-right: 20px;
+}
+
+.trio1 >*:not(:last-child){
+margin-bottom: 20px;
+}
+
+
+.trio2 >*:not(:last-child){
+margin-bottom: 20px;
+}
+
+.trio2{
+min-width: 299px;
+min-height: 429px;
+vertical-align: middle;
+background: url("../img/svg/dotted3.svg") 100% 100% no-repeat;
+}
+
+.content-icons{
+margin-bottom: 30px;
+}
+
+.content-icons1,
+.content-icons2{
+max-width: 290px;
+}
+
+.six-pictures{
+font-size: 0;
+margin-bottom: 30px;
+}
+
+.six-pictures1{
+margin-bottom: 15px;
+}
+
+.six-pictures1 >*:not(:last-child){
+margin-right: 15px;
+}
+
+.six-pictures2 >*:not(:last-child){
+margin-right: 15px;
+}
+
+.team{
+font-size: 0;
+margin-bottom: 50px;
+}
+
+.team >*:not(:last-child){
+margin-right: 20px;
+}
+
+.round-picture{
+margin-bottom: 30px;
+}
+
+.round1{
+display: inline-block;
+min-width: 180px;
+min-height: 190px;
+background: url("../img/svg/sticks.svg") center no-repeat;
+padding: 10px;
+}
+
+.roundpicture {
+border-radius: 50%;
+
+}
+
+
+.last-trio{
+font-size: 0;
+margin-bottom: 50px;
+}
+
+.last-trio >*:not(:last-child){
+margin-right: 10px;
+}
+
+
+.logo{
+max-width: 600px;
+min-height: 50px;
+padding: 20px 50px;
+margin-bottom: 30px;
+background: url("../img/svg/building.svg") 0 50% no-repeat,  #3056D3 ;
+}
+
+.phone {
+min-height: 50px;
+padding: 20px;
+margin-bottom: 30px;
+background: url("../img/svg/group3.svg") no-repeat;
+}
+
+.three-icons {
+display: inline-block;
+min-width: 250px;
+min-height: 50px;
+padding: 20px;
+margin-bottom: 50px;
+background:url("../img/svg/vector.svg") 15% no-repeat ,url("../img/svg/infinity.svg") 50% no-repeat , url("../img/svg/group2.svg") 85% no-repeat,   #3056D3;
+}
+
+.slider {
+min-width: 100px;
+min-height: 50px;
+padding: 20px;
+margin-bottom: 30px;
+background:url("../img/svg/slider.svg") no-repeat;
+}
+
+
+.circle-icons {
+margin-bottom: 50px;
+}
+
+.circle-icons >*:not(:last-child){
+margin-right: 30px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+display: inline-block;
+width: 150px;
+}
+
+
+.icon-1,
+.icon-2,
+.icon-3 {
+width: 150px;
+min-height: 150px;
+padding: 10px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.text1{
+max-width: 150px;
+text-align: center;
+padding: 10px;
+}
+
+.icon-1{
+background: url("../img/svg/envelope2.svg") center no-repeat, #F7F8FA;
+}
+
+.icon-2{
+background: url("../img/svg/phone.svg") center no-repeat, #F7F8FA;
+}
+
+
+.icon-3{
+background: url("../img/svg/mapmarker.svg") center no-repeat, #F7F8FA;
+}
+
+.social-links {
+min-width: 150px;
+min-height: 50px;
+background: url("../img/svg/socialinks.svg")  no-repeat;
+margin-bottom: 30px;
+}
+
+.last-envelope {
+display: inline-block;
+min-width: 30px;
+min-height: 30px;
+background: url("../img/svg/envelope.svg") center no-repeat, #3056D3;
+margin-bottom: 30px;
+}
+
+.copyright {
+min-width: 150px;
+min-height: 50px;
+background: url("../img/svg/copying.svg") no-repeat;
+margin-bottom: 30px;
+}
+
+
+.other {
+font-size: 0;
+padding-bottom: 20px;
+margin-bottom: 50px;
+}
+
+.decor {
+display: inline-block;
+min-width: 200px;
+min-height: 80px;
+background: url("../img/svg/dotted2.svg") no-repeat, url("../img/svg/shape.svg") 75% no-repeat;
+margin-right: 10px;
+}
+
+
+.decor2{
+display: inline-block;
+min-width:80px;
+min-height: 80px;
+background: url("../img/svg/dotted.svg") center no-repeat,  #3056D3;
+}
