@@ -1,0 +1,456 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap");
+
+.wrapper{
+overflow:clip;
+min-height: 100%;
+}
+[class*="__container"]{
+max-width: 1440px;
+min-height: 600px;
+margin: 0 auto;
+background-color:antiquewhite;
+margin-bottom: 50px;
+}
+
+
+.menu {
+font-family: "Inter", sans-serif;
+font-size: 16px;
+font-weight: 600;
+color: #212B36;
+min-height:100px ;
+padding: 20px 15px ;
+
+}
+
+.menu__wrapper {position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+min-height:100px ;
+background-color:white;
+z-index: 5;
+}
+
+
+.menu__main{
+   position: fixed;
+   left:135px;
+   top: 0px;
+   min-width:1180px;
+min-height: 100px;
+background-color: #FFFFFF;
+z-index: 5;
+}
+
+.menu__logo{
+position: relative;
+top: 28px;
+left: 0px;
+z-index: 5;
+}
+
+.menu__main-list{
+position: absolute;
+top: 30px;
+left: 205px;
+z-index: 5;
+}
+.menu__main-list li{
+display: inline-block;
+}
+
+.menu__main-list >*:not(:last-child){
+margin-right: 35px;
+}
+
+.menu__main-list >*:first-child{
+margin-right: 45px;
+}
+
+
+
+.menu__icons {
+position: absolute;
+top: 30px;
+left:88%;
+min-width: 140px;
+min-height: 32px;
+padding: 3px;
+}
+
+.menu__icons li{
+display:inline-block ;
+}
+
+.menu__icons li:not(:last-child){
+margin-right: 19px;
+}
+.search,
+.favourite,
+.basket{
+position: relative;
+display:inline-block ;
+min-height: 26px;
+min-width: 26px;
+
+}
+.search{
+ background: url("../img/search.svg")center no-repeat; 
+}
+.favourite {
+   background: url("../img/favourite.svg")center no-repeat;  
+}
+.basket {
+   background: url("../img/basket.svg")center no-repeat;   
+}
+
+.favourite::before{
+position: absolute;
+top:-5px;
+left:75%;
+content: "3";
+font-weight: 400;
+font-size: 11px;
+min-width: 16px;
+min-height: 16px;
+text-align: center;
+padding: 3px;
+border-radius: 50%;
+color: #FFFFFF;
+background-color: #3056D3;
+}
+
+.basket::before{
+   position: absolute;
+   top:-5px;
+   left:75%;
+   content: "1";
+   font-weight: 400;
+   font-size: 11px;
+   min-width: 16px;
+   min-height: 16px;
+   text-align: center;
+   padding: 3px;
+   border-radius: 50%;
+   color: #FFFFFF;
+   background-color: #3056D3;
+   }
+   
+
+.all-categories {
+min-width: 172px;
+min-height: 25px;
+padding: 9px 20px;
+border-radius: 5px;
+background: url("../img/iconbird.svg")85% no-repeat;
+}
+
+.menu-main__list li:hover:not(:first-child){
+color: #3056D3;
+}
+
+.all-categories:hover{
+background-color:#F4F7FF;
+}
+
+.products {
+min-width: 70px;
+padding-right: 20px;
+background: url("../img/iconbird.svg")100% no-repeat;
+}
+
+
+.menu__sub-menu,
+.menu__last-menu {
+font-weight: 500;
+line-height: 1.5;
+color: #637381;
+}
+
+.menu__sub-menu{
+position: absolute;
+top:80px;
+left:0px;
+padding-top: 22px;
+padding-bottom: 15px;
+min-width: 180px;
+min-height: 263px;
+background-color: #FFFFFF;
+border-radius: 5px;
+}
+
+
+.menu__sub-menu li{
+display: block;
+max-width: 132px;
+margin: 0 auto;
+}
+
+.menu__sub-menu li:not(:last-child){
+margin-bottom: 13px;
+}
+
+.menu__sub-menu::before{
+position: absolute;
+top: -10px;
+left: 0px;
+content: " ";
+width: 35px;
+height: 20px;
+background: url("../img/polygon.svg") no-repeat;
+}
+
+.menu__sub-menu::after{
+position: absolute;
+top: -50px;
+left: 0px;
+content: " ";
+width: 180px;
+height: 70px;
+}
+
+.fashion{
+background: url("../img/bird.svg")100% no-repeat;
+}
+
+
+.menu__sub-menu li:hover{
+color:  #3056D3;
+}
+
+.menu__last-menu {
+position: fixed;
+top:138px;
+left:523px;
+padding: 30px;
+min-height: 308px;
+min-width: 652px;
+background-color: #FFFFFF;
+border-radius: 5px;
+}
+
+.last-menu_left,
+.last-menu_right {
+display: inline-block;
+max-width: 116px;
+}
+
+.last-menu_left{
+margin-right: 80px;
+}
+
+.last-menu__title {
+font-weight: 600;
+color: #212B36; 
+margin-bottom: 12px;
+}
+
+.list-left li:not(:last-child){
+margin-bottom: 12px;
+}
+
+.list-right li:not(:last-child){
+margin-bottom: 12px;
+}
+
+.list-right li:hover{
+color:#3056D3 ;
+}
+.list-left li:hover{
+color:#3056D3 ;
+}
+
+.last-menu_right{
+margin-right: 69px;
+}
+
+.menu__last-menu::before{
+   position: absolute;
+content: "";
+top: 10px;
+left: -40px;
+width: 70px;
+height: 60px;
+}
+.discount {
+position: relative;
+display: inline-block;
+height: 248px;
+width: 220px;
+vertical-align: top;
+border-radius: 4px;
+}
+
+.discount__box {
+max-width: 140px;
+min-height: 128px;
+padding: 65px 5px;
+margin: 0 auto;
+color: #FFFFFF;
+z-index: 3;
+}
+
+.discount__picture{
+position: absolute;
+top: 0px;
+left:0px;
+z-index: 0;
+}
+.discount__text {
+position: relative;
+text-align: center;
+font-weight: 600;
+font-size: 20px;
+margin-bottom: 25px;
+}
+
+.discount__numbers {
+position: relative;
+text-align: center;
+font-weight: 700;
+font-size: 40px;
+}
+
+.button {
+position: relative;
+display: block;
+padding: 5px;
+font-weight: 700;
+font-size: 11px;
+width: 83px;
+min-height: 25px;
+background-color: #3056D3;
+border-radius: 2px;
+text-align: center;
+margin: 0 auto;
+}
+
+.button:hover{
+text-decoration: underline;
+}
+.menu__sub-menu{
+display: none;
+}
+
+.all-categories:hover .menu__sub-menu{
+display:inline-block;
+}
+
+.menu__last-menu{
+display: none;
+}
+
+.fashion:hover .menu__last-menu{
+display: block;
+}
+
+/*відпрацювання позиціонування з уроку*/
+
+footer{
+font-family: "Poppins", sans-serif;
+}
+.title-footer {
+font-size: 36px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 30px;
+letter-spacing: 10px;
+}
+
+
+.block-1,
+.block-2,
+.block-3{
+font-size: 24px;
+font-weight: 500;
+padding: 15px;
+color: aliceblue;
+}
+
+.block-1 {
+background-color: blue;
+}
+.block-2 {
+background-color: green;
+}
+
+.block-3 {
+background-color: blueviolet;
+}
+
+/*position:relative*/
+.relative-block{
+margin-bottom: 50px;
+}
+
+.relative-block__block-2 {
+position: relative;
+left:15%;
+top:50%;
+z-index: 1;
+}
+
+.relative-block__block-1 {
+position: relative;
+left: 30%;
+top: 20px;
+z-index: 2;
+}
+
+
+.relative-block__block-3 {
+position: relative;
+bottom: 20px;
+z-index: 0;
+}
+
+/*position:absolute*/
+
+.absolute-block {
+position: relative;
+min-height: 250px;
+margin-bottom: 30px;
+}
+
+
+.absolute-block__block-1 {
+position: absolute;
+top: 60px;
+left:40px;
+z-index: 2;
+}
+.absolute-block__block-2 {
+position: absolute;
+top: 100px;
+left:80px;
+z-index: 1;
+}
+.absolute-block__block-3 {
+position: absolute;
+top: 140px;
+left:120px;
+z-index: 0;
+}
+
+
+.fixed-block__block-1{
+position: sticky;
+top: 300px;
+left:0px;
+}
+
+.fixed-block__block-2{
+position: sticky;
+top: 300px;
+left:0px;
+}
+.fixed-block__block-3{
+position: sticky;
+top: 300px;
+left:0px;
+}
