@@ -1,51 +1,45 @@
-
 .main-title {
-font-size: 40px;
-font-weight: 700px;
-text-align: center;
-padding: 30px;
+   font-size: 40px;
+   font-weight: 700;
+   text-align: center;
+   padding: 30px;
 }
 
-.main-title_margin{
-margin: 30px;
+.main-title_margin {
+   margin: 30px;
 }
 
-.title{
-font-size: 30px;
-font-weight: 700px;
-text-align: center;
-padding: 20px;
-margin: 30px;
+.title {
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+   padding: 20px;
+   margin: 30px;
 }
 
-.title_margin{
-margin-bottom: 30px;
+.title_margin {
+   margin-bottom: 30px;
 }
 
-.sub-title{
-font-size: 24px;
-font-weight: 700px;
-text-align: center;
-padding: 20px;
-margin: 30px;  
+.sub-title {
+   font-size: 24px;
+   font-weight: 700;
+   text-align: center;
+   padding: 20px;
+   margin: 30px;
 }
-.sub-title_margin{
-margin-bottom: 30px;
-}
-
-
-.block{
-border: 5px solid red;
-background-color: aqua;
+.sub-title_margin {
+   margin-bottom: 30px;
 }
 
-.block__item{
-background-color: green;
-text-align: center;
-border: 3px solid violet;
-padding: 15px;
+.block {
+   border: 5px solid red;
+   background-color: aqua;
 }
 
-
-/*Макет*/
-
+.block__item {
+   background-color: green;
+   text-align: center;
+   border: 3px solid violet;
+   padding: 15px;
+}
