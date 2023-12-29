@@ -18,11 +18,9 @@ min-height: 100%;
 
 .heart{
    position: absolute;
-   top: 50px;
-   left:130px;
-   width: 25px;
-   height: 25px;
-   z-index: 3;
+   top: 250px;
+   left:650px;
+     z-index: 3;
 transform: scale(3);
 animation: heart-translate 2s ease forwards ,
 heart-bit 1s ease infinite alternate  2s ;
@@ -30,10 +28,10 @@ heart-bit 1s ease infinite alternate  2s ;
 
 @keyframes heart-translate{
 0%{
-transform: translate(0px,-90px);
+transform: translate(0px,-600px);
 }
 50%{
-   transform: translate(0px,-90px);}
+   transform: translate(0px,-600px);}
 100%{
 
 }
@@ -50,18 +48,20 @@ transform: scale(3);
 }
 .one{
 font-size: 0;
+margin-top: 50px;
+margin-left: 50px;
 
 }
 .left{
-max-width: 70px;
-max-height: 70px;
+max-width: 400px;
+max-height: 400px;
 animation: left 1s ease forwards ;
 }
 
 
 @keyframes left{
    0%{
-transform: translate(-70px,0px);
+transform: translate(-600px,0px);
    }
    100%{
 
@@ -69,14 +69,14 @@ transform: translate(-70px,0px);
 }
 
 .right{
-   max-width: 70px;
-   max-height: 70px;
+   max-width: 400px;
+   max-height: 400px;
    animation: right 1s ease forwards ;
    }
 
    @keyframes right{
       0%{
-   transform: translate(400px,0px);
+   transform: translate(900px,0px);
       }
       100%{
    
