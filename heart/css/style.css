@@ -1,0 +1,82 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+[class*="__container"]{
+max-width: 1470px;
+padding: 0px 15px;
+margin: 0 auto;
+font-family: "Poppins", "Arial", sans-serif;
+}
+
+.wrapper{
+overflow:clip;
+min-height: 100%;
+}
+
+
+
+.heart{
+   position: absolute;
+   top: 300px;
+   left: 900px;
+   z-index: 3;
+transform: scale(3);
+animation: heart-translate 2s ease forwards ,
+heart-bit 1s ease infinite alternate  2s ;
+}
+
+@keyframes heart-translate{
+0%{
+transform: translate(0px,-500px);
+}
+50%{
+   transform: translate(0px,-500px);}
+100%{
+
+}
+}
+@keyframes heart-bit{
+0%{
+transform: scale(3);
+
+}
+100%{
+   transform: scale(1);
+   
+  }
+}
+.one{
+font-size: 0;
+margin-left: 180px;
+}
+.left{
+max-width: 500px;
+max-height: 500px;
+animation: left 1s ease forwards ;
+}
+
+
+@keyframes left{
+   0%{
+transform: translate(-500px,0px);
+   }
+   100%{
+
+   }
+}
+
+.right{
+   max-width: 500px;
+   max-height: 500px;
+   animation: right 1s ease forwards ;
+   }
+
+   @keyframes right{
+      0%{
+   transform: translate(900px,0px);
+      }
+      100%{
+   
+      }
+   }
