@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_16</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <div class="main__container">
+         <header>
+            <div class="form-hometask">
+               <h1 class="main-title">Форми</h1>
+               <h2 class="title">Теги input & label</h2>
+
+               <form action="#" method="post" enctype="multipart/form-data">
+
+                  <div class="form">
+                     <div class="form__line">
+                        <input class="form__input" type="text" name="username" placeholder=" Введіть своє ім'я "
+                           autocomplete="off" minlength="5" required>
+                     </div>
+
+                     <div class="form__line">
+                        <label class="form__label" for="age_1">Введіть свій вік</label>
+                        <input class="form__input form__input_age" type="number" name="age" id="age_1"
+                           autocomplete="off" required>
+                     </div>
+
+                     <div class="form__line">
+                        <label class="form__label" for="mail_1">Введіть свій e-mail</label>
+                        <input class="form__input" type="email" name="mail" id="mail_1"
+                           placeholder=" Введіть свій e-mail " autocomplete="on" required>
+                     </div>
+
+                     <div class="form__line">
+                        <label class="form__label" for="phone_1">Введіть свій номер телефону</label>
+                        <input class="form__input" value="+380" type="tel" name="phone" id="phone_1"
+                           placeholder=" Введіть свій номер телефону " maxlength="13" autocomplete="on" required>
+                     </div>
+
+
+
+                     <div class="form__line">
+                        <label class="form__label" for="password_1">Введіть пароль</label>
+                        <input class="form__input" type="password" name="password" minlength="5" id="password_1"
+                           placeholder=" Введіть пароль " autocomplete="off" required>
+                     </div>
+
+
+                     <div class="form__line">
+                        <label class="form__label" for="color_1">Колір</label>
+                        <input class="form__input form__input_color" type="color" value="#008000" name="color"
+                           id="color_1" autocomplete="off">
+                     </div>
+
+                     <div class="form__line">
+                        <label class="form__label" for="search_1">Що бажаєте знайти?</label>
+                        <input class="form__input" type="search" name="search" id="search_1"
+                           placeholder=" Введіть свій запит " autocomplete="off">
+                     </div>
+
+
+                     <div class="form__line">
+                        <label class="form__label" for="date_1">Оберіть дату свого народження</label>
+                        <input class="form__input" type="date" name="date" id="date_1" autocomplete="off">
+                     </div>
+
+
+                     <div class="form__line">
+                        <input class="form__input" type="range" name="range" autocomplete="off">
+                     </div>
+
+
+                     <div class="form__line">
+                        <label class="form__label" for="disabled_1">Неактивне поле</label>
+                        <input class="form__input" type="text" disabled name="dis" id="disabled_1" autocomplete="off">
+                     </div>
+
+                     <div class="form__checkbox">
+                        <h3 class="form__title">Ваші домашні улюбленці</h3>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_checkbox" type="checkbox" checked name="animal"
+                              value="dog" id="dog_1">
+                           <label class="form__label form__label_checkbox" for="dog_1">Собака</label>
+                        </div>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_checkbox" type="checkbox" name="animal" value="cat"
+                              id="cat_1">
+                           <label class="form__label form__label_checkbox" for="cat_1">Кіт</label>
+                        </div>
+
+
+                        <div class="form__line">
+                           <input class="form__input form__input_checkbox" type="checkbox" name="animal" value="parrot"
+                              id="parrot_1">
+                           <label class="form__label form__label_checkbox" for="parrot_1">Папуга</label>
+                        </div>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_checkbox" type="checkbox" name="animal" value="hamster"
+                              id="hamster_1">
+                           <label class="form__label form__label_checkbox" for="hamster_1">Хом'як</label>
+                        </div>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_checkbox" type="checkbox" name="animal" value="other"
+                              id="other_1">
+                           <label class="form__label form__label_checkbox" for="other_1">Інше</label>
+                        </div>
+
+                     </div>
+
+                     <!-- радіо-кнопки -->
+
+
+                     <div class="form__radio">
+                        <h3 class="form__title">Яка марка автомобіля подобається найбільше?</h3>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_radio" type="radio" checked name="car" value="mercedes"
+                              id="mercedes_1">
+                           <label class="form__label form__label_radio" for="mercedes_1">Mercedes</label>
+                        </div>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_radio" type="radio" checked name="car" value="audi"
+                              id="audi_1">
+                           <label class="form__label form__label_radio" for="audi_1">Audi</label>
+                        </div>
+
+
+                        <div class="form__line">
+                           <input class="form__input form__input_radio" type="radio" checked name="car" value="citroen"
+                              id="citroen_1">
+                           <label class="form__label form__label_radio" for="citroen_1">Citroen</label>
+                        </div>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_radio" type="radio" checked name="car" value="bmw"
+                              id="bmw_1">
+                           <label class="form__label form__label_radio" for="bmw_1">BMW</label>
+                        </div>
+
+                        <div class="form__line">
+                           <input class="form__input form__input_radio" type="radio" checked name="car" value="honda"
+                              id="honda_1">
+                           <label class="form__label form__label_radio" for="honda_1">Honda</label>
+                        </div>
+
+                     </div>
+
+
+
+                     <div class="form__line">
+                        <input class="form__input form__input_files" type="file" name="files" multiple
+                           accept="image/png, image/jpeg, image/svg">
+                     </div>
+
+
+                     <h3 class="form__title">Додаткова інформація</h3>
+                     <textarea class="form__area" autocomplete="off" name="information"
+                        placeholder="додаткова інформація,яку бажаєте додати"></textarea>
+
+                     <div class="form__line">
+                        <h3 class="form__title_select">Оберіть улюблений колір</h3>
+                        <select class="form__select" name="list">
+                           <option value="1">зелений</option>
+                           <option value="2">жовтий</option>
+                           <option value="3">червоний</option>
+                           <option value="4">синій</option>
+                           <option selected value="5">білий</option>
+                           <option value="6">чорний</option>
+                        </select>
+                     </div>
+
+                     <div class="form__line">
+                        <button class="button" type="button">Звичайна кнопка</button>
+                     </div>
+                     <div class="form__line"><button class="button" type="reset">Скинути все</button></div>
+                     <div class="form__line"><button class="button" type="submit">Відправити форму</button></div>
+
+
+
+
+
+                     <div class="form-style">
+                        <h2 class="title">Стилізація checkbox i radio</h2>
+
+
+
+                        <h3 class="form__title">Ваші домашні улюбленці</h3>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-checkbox" type="checkbox" checked name="animal2" value="dog" id="dog_2">
+                           <label class="label-checkbox" for="dog_2">Собака</label>
+                        </div>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-checkbox" type="checkbox" name="animal2" value="cat" id="cat_2">
+                           <label class="label-checkbox" for="cat_2">Кіт</label>
+                        </div>
+
+
+                        <div class="form__line form__line_style">
+                           <input class="input-checkbox" type="checkbox" name="animal2" value="parrot" id="parrot_2">
+                           <label class="label-checkbox" for="parrot_2">Папуга</label>
+                        </div>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-checkbox" type="checkbox" name="animal2" value="hamster" id="hamster_2">
+                           <label class="label-checkbox" for="hamster_2">Хом'як</label>
+                        </div>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-checkbox" type="checkbox" name="animal2" value="other" id="other_2">
+                           <label class="label-checkbox" for="other_2">Інше</label>
+                        </div>
+
+
+
+
+                        <h3 class="form__title">Яка марка автомобіля подобається найбільше?</h3>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-radio" type="radio" checked name="car2" value="mercedes" id="mercedes_2">
+                           <label class="label-radio" for="mercedes_2">Mercedes</label>
+                        </div>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-radio" type="radio" checked name="car2" value="audi" id="audi_2">
+                           <label class="label-radio" for="audi_2">Audi</label>
+                        </div>
+
+
+                        <div class="form__line form__line_style">
+                           <input class="input-radio" type="radio" checked name="car2" value="citroen" id="citroen_2">
+                           <label class="label-radio" for="citroen_2">Citroen</label>
+                        </div>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-radio" type="radio" checked name="car2" value="bmw" id="bmw_2">
+                           <label class="label-radio" for="bmw_2">BMW</label>
+                        </div>
+
+                        <div class="form__line form__line_style">
+                           <input class="input-radio" type="radio" checked name="car2" value="honda" id="honda_2">
+                           <label class="label-radio" for="honda_2">Honda</label>
+                        </div>
+
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </header>
+      </div>
+
+
+
+      <main>
+         <h2 class="title">Перший макет</h2>
+
+         <div class="page page_margin">
+            <h3 class="page__title">Billing Details</h3>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+               <div class="page__form">
+                  <div class="page__header page__header_margin">
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="username" required placeholder="First name*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="userlastname" required placeholder="Last name*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="address" required placeholder="Address*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="address2" placeholder="Address line 2">
+                     </div>
+
+                     <div class="form__item form__item_arrow">
+                        <select class="select-first" name="country" required>
+                           <option selected disabled hidden value="">Country*</option>
+                           <option value="Ukraine">Ukraine</option>
+                           <option value="USA">USA</option>
+                           <option value="Italy">Italy</option>
+                           <option value="Spain">Spain</option>
+                           <option value="Great Britain">Great Britain</option>
+                        </select>
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="city" required placeholder="City/Town*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="postcode1" required placeholder="Postcode / ZIP*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="tel" name="phone1" required placeholder="Phone*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="text" name="postcode2" required placeholder="Postcode / ZIP*">
+                     </div>
+
+                     <div class="form__item">
+                        <input class="input-first" type="tel" name="phone1" required placeholder="Phone*">
+                     </div>
+
+
+                     <textarea class="area" autocomplete="off" name="information1"
+                        placeholder="Additional information"></textarea>
+
+
+                  </div>
+
+                  <div class="page__main page__main_margin">
+                     <div class="form__item form__item_checkbox">
+                        <input class="input-first input-first_checkbox" type="checkbox" checked name="create"
+                           value="yes" id="creat-1">
+                        <label class="label-first label-first_checkbox" for="creat-1">Create Account</label>
+                     </div>
+
+                     <div class="form__item form__item_checkbox">
+                        <input class="input-first input-first_checkbox" type="checkbox" name="ship" value="yes"
+                           id="ship-1">
+                        <label class="label-first label-first_checkbox" for="ship-1">Ship to a different
+                           address?</label>
+                     </div>
+
+                  </div>
+                  <h3 class="page__title page__title_margin">Apply Coupon to get discount!</h3>
+
+                  <div class="page__button">
+                     <div class="form__item">
+                        <input class="input-first input-first_coupon" type="text" name="coupon" id="coupon-1"
+                           placeholder="Coupon code">
+                     </div>
+                     <div class="form__item  form__item_button">
+                        <button class="button-1" type="submit">Apply Code</button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+
+
+
+         </div>
+
+
+
+      </main>
+
+      <!-- макет 2 -->
+      <footer>
+         <div class="block">
+
+            <div class="block__section section__block">
+               <h2 class="section-title">Shipping Address</h2>
+
+
+               <form action="#" method="post" enctype="multipart/form-data">
+                  <div class="section__form form__section ">
+                     <div class="section-block section-block_margin">
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="mail-2">Email Address <span>*</span></label>
+                           <input class="input-staff" type="email" required name="email-2" id="mail-2"
+                              placeholder="roni_cost@example.com">
+                        </div>
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="password-2">Password </label>
+                           <input class="input-staff" type="password" required name="password" id="password-2"
+                              placeholder="******************">
+                        </div>
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="code-2">Zip/Postal Code </label>
+                           <input class="input-staff" type="text" name="code2" id="code-2">
+                        </div>
+                     </div>
+
+                     <div class="form__text">You already have an account with us. Sign in or continue as guest.</div>
+
+                     <div class="buttons">
+                        <div class="form__button"><button class=" button-black button-black_margin"
+                              type="submit">login</button>
+                        </div>
+                        <div class="form__forgot"><a href="#">Forgot Your Password?</a></div>
+                     </div>
+                  </div>
+               </form>
+
+            </div>
+
+            <div class="block__decor block__decor_margin "></div>
+
+            <div class="block__section">
+
+
+
+               <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+                  <div class="section__form form__section">
+
+                     <div class="section-block  section-block_margin2">
+                        <div class="form__staff">
+                           <label class="label-staff" for="name-3">First Name <span>*</span></label>
+                           <input class="input-staff" type="text" required name="name-3" id="name-3">
+                        </div>
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="last-name">Last Name <span>*</span></label>
+                           <input class="input-staff" type="text" required name="last-name" id="last-name">
+                        </div>
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="company-1">Company </label>
+                           <input class="input-staff" type="text" name="company" id="company-1">
+                        </div>
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="address-4">Street Address <span>*</span> </label>
+                           <input class="input-staff input-staff_margin" type="text" required name="address-4"
+                              id="address-4">
+                           <input class="input-staff input-staff_margin" type="text" name="address-4">
+                           <input class="input-staff input-staff_margin" type="text" name="address-4">
+                        </div>
+
+
+                        <div class="form__staff">
+                           <label class="label-staff" for="country-4">Country <span> * </span></label>
+                           <input class="input-staff" type="text" required name="country-4" id="country-4">
+                        </div>
+
+
+                        <div class="form__staff form__staff_arrow ">
+                           <label class="label-staff" for="province">State/Province <span> * </span></label>
+                           <select class="select-staff" name="list-province" id="province" required>
+                              <option selected disabled hidden value="">Please select a region, state or province
+                              </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                           </select>
+                        </div>
+
+                     </div>
+                     <h2 class="section-title section-title_margin">Shipping Methods</h2>
+
+                     <div class="form__staff_radio">
+                        <input class="input-staff input-staff_radio" type="radio" checked name="price" value="5$"
+                           id="price-4">
+                        <label class=" label-staff-radio label-staff-radio_main" for="price-4">$5.00
+                        </label>
+                        <label class=" label-staff-radio label-staff-radio_other" for="price-4">Fixed </label>
+                        <label class=" label-staff-radio label-staff-radio_other" for="price-4">Flat Rate </label>
+
+                     </div>
+                     <div class="form__staff_radio form__staff_radio-2">
+                        <input class="input-staff input-staff_radio" type="radio" name="price" value="10$" id="price-5">
+                        <label class=" label-staff-radio label-staff-radio_main" for="price-5">$10.00
+                        </label>
+                        <label class=" label-staff-radio label-staff-radio_other" for="price-5">Table Rate </label>
+                        <label class=" label-staff-radio label-staff-radio_other" for="price-5">Best Way </label>
+                     </div>
+                     <div class="buttons buttons_2">
+
+                        <div class="form__button"><button class="button-black" type="submit">next</button></div>
+                        <div class="form__button"><button class="button-grey" type="button">Back</button></div>
+
+                     </div>
+                  </div>
+
+               </form>
+
+
+            </div>
+         </div>
+
+      </footer>
+
+   </div>
+
+
+
+
+
+
+</body>
+
+</html>
