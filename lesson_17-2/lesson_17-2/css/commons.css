@@ -1,0 +1,15 @@
+.form__input{
+   border-radius: 5px;
+   border: 1px solid black;
+   min-height: 50px;
+   width: 30%;
+   padding: 15px;
+   }
+
+   .form__label{
+      display: inline-block;
+      font-weight:500;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-right: 15px ;
+   }
