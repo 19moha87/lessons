@@ -278,30 +278,7 @@ $Oswald: "Oswald",sans-serif;
 }
 .block {
 position: relative;
-//!!!!!!
-//display: flex;
-//flex-wrap: wrap;
-//&:nth-child(2){
-//   justify-content: flex-end;
-//}
-//&:nth-child(3){
-//   justify-content: flex-end;
-//}
-//&__pic{
-//   position: relative;
-//   overflow: hidden;
-  
-//   &__img{
-//      position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: center;
-//   }
-//}
-//!!!!!!
+
 @media (max-width:745px){
    display: flex;
    flex-direction: column;
@@ -502,6 +479,10 @@ left: 0;
       min-height: 56px;
       border: 2px solid;
       transition: all 0.3s;
+      &:hover{
+         background-color: black;
+         color: #FFFFFF;
+      }
       &:not(:last-child){
          margin-bottom: 10px;
       }
@@ -517,7 +498,6 @@ left: 0;
       padding: 14px;
    }
 }
-
 
    //!!!!!!!!! ДРУГА СЕКЦІЯ!!!!!!!!
 
@@ -739,6 +719,10 @@ border-radius: 5px;
       font-weight: 300;
       line-height: 1.25;
       color: $MainColor;
+      transition: all 0.3s;
+      &:hover{
+         text-decoration: underline;
+      }
       &:not(:last-child){
          margin-bottom: 18px;
       }
@@ -1305,6 +1289,10 @@ font-size: 18px;
       line-height: 1.5;
       color: #BDBDBD;
       text-transform: uppercase;
+      transition: all 0.3s;
+      &:hover{
+         text-decoration: underline;
+      }
       &:not(:last-child){
          margin-bottom:21px;
       }
@@ -1323,6 +1311,10 @@ font-size: 18px;
      line-height: 1.5;
      color: $MainColor;
      text-transform: capitalize;
+     transition: all 0.3s;
+      &:hover{
+         text-decoration: underline;
+      }
      &:not(:last-child){
       margin-bottom:32px;
    }
