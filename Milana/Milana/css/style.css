@@ -505,8 +505,9 @@ body {
       align-self: center;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   color: palevioletred;
+  text-transform: uppercase;
   -webkit-transform: translate(-200%, 0px);
           transform: translate(-200%, 0px);
   -webkit-animation: trans1 0.8s ease forwards 2.7s;
