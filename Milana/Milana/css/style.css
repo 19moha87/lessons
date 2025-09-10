@@ -112,6 +112,17 @@ body {
           justify-content: space-between;
 }
 
+.page__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -520px;
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  z-index: 10;
+}
+
 @media (max-width: 1800px) {
   .page__list {
     gap: 8px;
