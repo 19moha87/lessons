@@ -1187,6 +1187,13 @@ body {
   padding: 14px;
 }
 
+.page__section04 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: visible 0.5s ease forwards 3s;
+          animation: visible 0.5s ease forwards 3s;
+}
+
 .section04_margin:not(:last-child) {
   margin-bottom: 119px;
 }
@@ -1293,5 +1300,27 @@ body {
 @media (max-width: 1175px) {
   .sectio04__body:not(:last-child) {
     margin-bottom: 38px;
+  }
+}
+
+@-webkit-keyframes visible {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
   }
 }

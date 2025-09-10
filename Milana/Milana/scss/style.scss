@@ -1185,6 +1185,9 @@ font-size: 18px;
 .page {
 
    &__section04 {
+   opacity:0;
+   visibility: hidden;
+   animation: visible 0.5s ease forwards 3s;
    }
 }
 .section04 {
@@ -1282,5 +1285,16 @@ font-size: 18px;
           
      }
 
+   }
+}
+
+@keyframes visible{
+   0%{
+      visibility: hidden;
+      opacity: 0;
+   }
+   100%{
+      visibility: visible;
+      opacity: 1;
    }
 }
