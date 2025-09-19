@@ -152,8 +152,6 @@ body._lock {
 }
 
 .header__menu {
-  -webkit-animation: transform01 1s ease  forwards;
-          animation: transform01 1s ease  forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,6 +292,8 @@ body._lock {
 }
 
 .menu__list {
+  -webkit-animation: transform01 1s ease  forwards;
+          animation: transform01 1s ease  forwards;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

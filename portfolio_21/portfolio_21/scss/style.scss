@@ -86,7 +86,7 @@ body {
    }
 
    &__menu {
-      animation: transform01 1s ease  forwards ;
+      
       display: flex;
       align-items: center;
       gap: 1.5625rem;
@@ -100,6 +100,7 @@ body {
    }
 
    &__body {
+    
    padding-top: 16.8125rem;
       display: flex;
       flex-wrap: wrap;
@@ -174,6 +175,7 @@ body {
    }
   @media(max-width:47.9375em){
    &__body{
+    
       position: fixed;
       top: 0;
       left: -100%;
@@ -227,6 +229,7 @@ span{
       }
    }
    &__list {
+      animation: transform01 1s ease  forwards ;
       position: relative;
       display: flex;
       flex-wrap: wrap;
