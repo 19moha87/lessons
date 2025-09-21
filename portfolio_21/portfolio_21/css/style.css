@@ -695,6 +695,12 @@ body._touch .menu__arrow {
   color: rgba(73, 80, 87, 0.5);
 }
 
+@media (max-width: 71.44em) {
+  .section01__columns {
+    display: none;
+  }
+}
+
 .section01__column {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;

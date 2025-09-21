@@ -614,6 +614,9 @@ flex: 1 1 100%;
       flex-wrap: wrap;
       gap: 1.25rem;
       color: rgba(73, 80, 87, 0.5);
+      @media(max-width:71.44em){
+         display: none;
+      }
    }
 
    &__column {
