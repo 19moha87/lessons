@@ -554,7 +554,7 @@ flex: 1 1 100%;
       }
    }
    &__container{
-      transform: translate(0,200px);
+      transform: translate(-200%,0px);
       opacity: 0;
       transition: transform 1s;
       //transition: opacity 1s;
@@ -713,6 +713,8 @@ flex: 1 1 100%;
       //   //transform: scale(1);
       //   opacity: 1;
       //}
+animation: scale-infinity 20s infinite;
+
       &:hover {
          //transform: scale(1.2);
          opacity: 0.5;
@@ -798,7 +800,17 @@ flex: 1 1 100%;
 //      background-color: rgba(33, 37, 41, 0.534);
 //   }
 //}
-
+@keyframes scale-infinity{
+   0%{
+      transform: scale(1.3);
+   }
+   50%{
+      transform: scale(1);
+   }
+   100%{
+      transform: scale(1.3);
+   }
+}
 //!!!!!!!!!   SECTION02   !!!!!!!!!!
 
 @mixin title($color: #f8f9fa) {
@@ -891,9 +903,11 @@ flex: 1 1 100%;
 
    &__right {
       position: relative;
+      overflow: hidden;
       @media (max-width: 49.5625em) {
          min-height: 400px;
       }
+    
    }
 
    &__img {
@@ -905,7 +919,9 @@ flex: 1 1 100%;
       height: 100%;
       object-fit: cover;
       z-index: 0;
+     animation: scale-infinity02 30s infinite;
    }
+   
 }
 .box {
    display: flex;
@@ -1021,19 +1037,36 @@ flex: 1 1 100%;
       font-size: 0.75rem;
       font-weight: 700;
    }
+   //&__pic{
+   //   position: relative;
+   //   width: 100%;
+   //   height: 100%;
+   //   overflow: hidden;
+   //}
 }
-.slider {
-   z-index: 2;
-   transition: all 0.3s;
-   //color: rgba(229, 229, 229, 1);
-   &:hover {
-      color: rgba(229, 229, 229, 0.5);
+//.slider {
+//   z-index: 2;
+//   transition: all 0.3s;
+//   //color: rgba(229, 229, 229, 1);
+//   &:hover {
+//      color: rgba(229, 229, 229, 0.5);
+//   }
+//   &::before {
+//      content: "";
+//      width: 2.9rem;
+//      background: url("../img/icons/Line.svg") 50% no-repeat;
+//      padding-left: 3.375rem;
+//   }
+//}
+@keyframes scale-infinity02{
+   0%{
+      transform: scale(1.3);
    }
-   &::before {
-      content: "";
-      width: 2.9rem;
-      background: url("../img/icons/Line.svg") 50% no-repeat;
-      padding-left: 3.375rem;
+   50%{
+      transform: scale(1);
+   }
+   100%{
+      transform: scale(1.3);
    }
 }
 
@@ -1041,9 +1074,9 @@ flex: 1 1 100%;
 
 .section03 {
 &__container{
-   transform: translate(0,200px);
+   transform: translate(-200%,0px);
    opacity: 0;
-   transition: transform 1s;
+   transition: transform 1s ease;
    &._show{
       transform: translate(0,0px) ;
       opacity: 1;

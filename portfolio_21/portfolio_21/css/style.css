@@ -610,8 +610,8 @@ body._touch .menu__arrow {
 }
 
 .section01__container {
-  -webkit-transform: translate(0, 200px);
-          transform: translate(0, 200px);
+  -webkit-transform: translate(-200%, 0px);
+          transform: translate(-200%, 0px);
   opacity: 0;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -1220,13 +1220,13 @@ body._touch .menu__arrow {
 }
 
 .section03__container {
-  -webkit-transform: translate(0, 200px);
-          transform: translate(0, 200px);
+  -webkit-transform: translate(-200%, 0px);
+          transform: translate(-200%, 0px);
   opacity: 0;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 .section03__container._show {
