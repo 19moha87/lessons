@@ -1,0 +1,48 @@
+.grid{
+   gap: 10px;
+   background-color: darkgreen;
+}
+.grid__item{
+   background-color: brown;
+   padding: 10px;
+   text-align: center;
+   border:1px solid black;
+}
+
+.title{
+   font-size:34px;
+   text-align: center;
+   color: #212B36;
+
+}
+
+.title_40 {
+   font-size: 40px;
+   line-height: 1.125; 
+   font-weight: 700;  
+   color:#212B36; 
+   text-transform: capitalize;
+}
+
+.title_main{
+   font-size: 42px;
+   font-weight: 700;
+   margin-top: 20px;
+}
+
+.title_margin{
+   margin-bottom: 20px;
+}
+
+.grid_template,
+.grid_flow,
+.grid_justify,
+.grid_align,
+.grid_align-content,
+.grid_align-2,
+.grid_nth,
+.grid_auto{
+   display: grid;
+   margin-bottom: 20px;
+}
+

@@ -1,0 +1,55 @@
+@font-face {
+   font-family: 'icons';
+   src: url('../fonts/icons.woff') format('woff2'),
+       url('../fonts/icons.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+ [class*=" _icon-"] {
+  &::before{
+   /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+._icon-search1:before {
+  content: "\e900";
+}
+._icon-arrow:before {
+  content: "\e901";
+  color: #fff;
+}
+._icon-check:before {
+  content: "\e902";
+}
+._icon-heart:before {
+  content: "\e903";
+}
+._icon-s-fb:before {
+  content: "\e904";
+  color: #fff;
+}
+._icon-shopping-bag:before {
+  content: "\e905";
+}
+._icon-s-inst:before {
+  content: "\e906";
+  color: #fff;
+}
+._icon-search:before {
+  content: "\e986";
+}

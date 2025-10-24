@@ -1,0 +1,66 @@
+
+
+////rem
+//@function rem($px){
+//   $result: math.div($px,16) + rem;
+//return $result;
+//}
+
+
+////@function rem($px,$base: 16){
+////   @return ($px / $base)*1rem;
+////}
+
+////em
+//@function em($px, $current: 16){
+//   $result: math.div($px,$current)+em;
+//return $result;
+//}
+
+
+////@function rem(px,){
+////return `${px/16}rem`;
+////}
+
+////@function em(px){
+////   return `${px/16}em`;
+////   }
+
+%menu-link{
+   font-family: "Oswald";
+   font-weight: 600;
+   font-size: 0.875rem;
+   line-height: 1.5;
+   text-transform: uppercase;
+   
+   padding-top:0.2rem ;
+   padding-left: 0.1rem;
+   padding-right: 0.1rem;
+   padding-bottom: 0.2rem;
+   position: relative;
+   &_yellow{
+      color: yellow;
+   }
+   &::after{
+      content: "";
+      height: 0.125rem;
+      width: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $redColor;
+      transition: all 0.3s;
+   }
+&.active{
+   &::after{
+      width: 100%;
+   }
+}
+   @media(any-hover:hover){
+      &:hover{
+         &::after{
+            width: 100%;
+         }
+      }
+   }
+}
