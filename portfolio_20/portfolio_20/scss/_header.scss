@@ -150,6 +150,12 @@ flex-wrap: wrap;
       @extend %menu-link;
       display:inline-block;
       color: #ffffff;
+      &_yellow{
+         color: yellow;
+      }
+      &_red{
+         color: $redColor;
+      }
       &:active{
          color: $redColor;
       }
@@ -275,7 +281,7 @@ pointer-events: none;
 
 .button-search {
    display: flex;
-   align-se: center;
+   align-self: center;
    column-gap: 0.5rem;
    color: #ffffff;
   

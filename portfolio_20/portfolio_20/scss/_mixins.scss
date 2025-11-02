@@ -1,29 +1,29 @@
 
-
+@use "sass:math";
 ////rem
 //@function rem($px){
 //   $result: math.div($px,16) + rem;
 //return $result;
 //}
-
-//@function rem($px,$base: 16){
-//   @return ($px / $base)*1rem;
-//}
+$base: 16;
+@function rem($px){
+   @return ($px / $base)*1rem;
+}
 
 ////em
-//@function em($px, $current: 16){
-//   $result: math.div($px,$current)+em;
-//return $result;
-//}
 
+
+@function em($px, $context: 16){
+   @return ($px / $context)*1em;
+}
 
 ////@function rem(px,){
 ////return `${px/16}rem`;
 ////}
 
-////@function em(px){
-////   return `${px/16}em`;
-////   }
+//@function em($px){
+//   @return `{$px / 16}*em`;
+//   }
 
 %menu-link{
    font-family: "Oswald";

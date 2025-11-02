@@ -44,6 +44,8 @@ if (isMobile.any()) {
             const isOpen = menuItem.classList.contains('_active');
             document.querySelectorAll('.menu__item._active').forEach(item => {
                item.classList.remove('_active');
+
+
             });
 
             if (!isOpen) {
@@ -54,10 +56,31 @@ if (isMobile.any()) {
 
       }
    }
+
 } else {
    console.log("це пк");
    document.body.classList.add("_pc");
-}
+};
+
+
+//!!!!!!!! закриття підменю кліком на будь-якій точці екрану
+const menuFs = document.querySelectorAll('.menu__item');
+if (menuFs.length > 0) {
+
+   for (let index = 0; index < menuFs.length; index++) {
+      const menuF = menuFs[index];
+
+      document.addEventListener('click', menuClose);
+      function menuClose(e) {
+         if (!menuF.contains(e.target)) {
+            menuF.classList.remove('_active');
+         };
+      };
+
+   };
+
+};
+
 
 
 
