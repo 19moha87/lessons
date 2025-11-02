@@ -48,7 +48,14 @@ body {
 
 
 /*МАКЕТ 1*/
-
+.info{
+ 
+      margin-bottom: rem(15);
+   padding:0 rem(15);
+   P:not(:last-child){
+      margin-bottom: rem(10);
+   }
+}
 /* Block 1 */
 
 [class*="__container01"]{

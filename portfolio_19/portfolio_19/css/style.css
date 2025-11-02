@@ -300,6 +300,10 @@ button {
   color: rgba(255, 255, 0, 0.89);
 }
 
+.menu__link_red {
+  color: #eb5757;
+}
+
 .menu__link:active {
   color: #eb5757;
 }
@@ -638,6 +642,15 @@ body._lock {
 }
 
 /*МАКЕТ 1*/
+.info {
+  margin-bottom: 0.9375rem;
+  padding: 0 0.9375rem;
+}
+
+.info P:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
 /* Block 1 */
 [class*="__container01"] {
   max-width: 75rem;

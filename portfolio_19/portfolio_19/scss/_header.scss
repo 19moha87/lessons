@@ -181,6 +181,9 @@ flex-wrap: wrap;
       &_yellow{
          color: rgba(255, 255, 0, 0.89);
       }
+      &_red{
+         color: $redColor;
+      }
       &:active{
          color: $redColor;
       }

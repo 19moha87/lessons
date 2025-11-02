@@ -61,15 +61,24 @@ if (isMobile.any()) {
    document.body.classList.add("_pc");
 }
 
-//!!!!
-//document.addEventListener('click',function(o){
-//   const openSubs = document.querySelectorAll('.menu__item._active');
-//openSubs.forEach(openSub =>
-//   if(!openSub.contains(o.target) && !openSub.previousElementSibling.contains(o.target)){
-//      openSub.classList.remove('_active');
-//   };
-//);
-//});
+//!!!!!!!! закриття підменю кліком на будь-якій точці екрану
+const menuFs = document.querySelectorAll('.menu__item');
+if (menuFs.length > 0) {
+
+   for (let index = 0; index < menuFs.length; index++) {
+      const menuF = menuFs[index];
+
+      document.addEventListener('click', menuClose);
+      function menuClose(e) {
+         if (!menuF.contains(e.target)) {
+            menuF.classList.remove('_active');
+         };
+      };
+
+   };
+
+};
+
 
 
 
