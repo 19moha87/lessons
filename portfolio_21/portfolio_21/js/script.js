@@ -29,6 +29,24 @@ const isMobile = {
    }
 };
 
+//if (isMobile.any()) {
+//   console.log("це мобілка");
+//   document.body.classList.add("_touch");
+//   let menuArrows = document.querySelectorAll('.menu__arrow');
+//   if (menuArrows.length > 0) {
+//      for (let index = 0; index < menuArrows.length; index++) {
+//         const menuArrow = menuArrows[index];
+//         menuArrow.addEventListener("click", function (e) {
+//            menuArrow.parentElement.classList.toggle('_active');
+//         });
+//      }
+//   }
+//} else {
+//   console.log("це пк");
+//   document.body.classList.add("_pc");
+
+//}
+
 if (isMobile.any()) {
    console.log("це мобілка");
    document.body.classList.add("_touch");
@@ -36,15 +54,44 @@ if (isMobile.any()) {
    if (menuArrows.length > 0) {
       for (let index = 0; index < menuArrows.length; index++) {
          const menuArrow = menuArrows[index];
-         menuArrow.addEventListener("click", function (e) {
-            menuArrow.parentElement.classList.toggle('_active');
+         menuArrow.addEventListener("click", () => {
+            // відкриття лише одного підменю
+            const menuItem = menuArrow.parentElement;
+            const isOpen = menuItem.classList.contains('_active');
+            document.querySelectorAll('.list__item._active').forEach(item => {
+               item.classList.remove('_active');
+            });
+
+            if (!isOpen) {
+               menuItem.classList.add('_active');
+            }
+
          });
+
       }
    }
 } else {
    console.log("це пк");
    document.body.classList.add("_pc");
 }
+
+//!!!!!!!! закриття підменю кліком на будь-якій точці екрану
+const menuFs = document.querySelectorAll('.list__item');
+if (menuFs.length > 0) {
+
+   for (let index = 0; index < menuFs.length; index++) {
+      const menuF = menuFs[index];
+
+      document.addEventListener('click', menuClose);
+      function menuClose(e) {
+         if (!menuF.contains(e.target)) {
+            menuF.classList.remove('_active');
+         };
+      };
+
+   };
+
+};
 
 
 //document.getElementById("scroll02").addEventListener("click", function () {

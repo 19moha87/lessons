@@ -52,6 +52,7 @@ button {
   background-color: inherit;
 }
 
+@use "sass:math";
 .wrapper {
   overflow: clip;
   min-height: 100%;
@@ -331,6 +332,10 @@ body._lock {
   display: inline-block;
 }
 
+.list__item_red {
+  color: red;
+}
+
 @media (max-width: 47.9375em) {
   .list__item {
     font-size: 1.5rem;
@@ -565,6 +570,22 @@ body._touch .menu__arrow {
   pointer-events: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.sub__menu_info {
+  min-width: 17.5rem;
+  background-color: #f8f9fa;
+  color: #212529;
+  text-transform: none;
+}
+
+.sub__menu_info .info {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sub__menu_info .info p:not(:last-child) {
+  margin-bottom: 0.625rem;
 }
 
 @media (max-width: 47.9375em) {
